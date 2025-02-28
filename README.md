@@ -31,8 +31,7 @@ automotive-parts-inventory
 │   │               └── example
 │   │                   └── inventory
 │   │                       └── PartControllerTest.java
-│   ├── build.gradle
-│   └── settings.gradle
+│   ├── pom.xml
 ├── frontend               # Frontend application
 │   ├── public
 │   │   ├── index.html
@@ -71,18 +70,18 @@ automotive-parts-inventory
 
 - Java 11 or higher
 - Node.js and npm
-- Gradle
+- Maven
 
 ### Backend Setup
 
 1. Navigate to the `backend` directory.
-2. Build the project using Gradle:
+2. Build the project using Maven:
    ```
-   ./gradlew build
+   mvn clean install
    ```
 3. Run the Spring Boot application:
    ```
-   ./gradlew bootRun
+   mvn spring-boot:run
    ```
 
 ### Frontend Setup
